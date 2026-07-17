@@ -90,16 +90,16 @@ export default function App() {
         {/* Hero Content (vertically centered, left-aligned) */}
         <main 
           id="hero-content" 
-          className="flex-1 flex flex-col justify-center px-6 sm:px-12 lg:px-16"
+          className="flex-1 flex flex-col justify-center px-6 sm:px-12 lg:px-16 py-2 sm:py-0"
         >
           <div className="max-w-4xl select-text">
             {/* Tagline (0s delay) */}
             <div 
               id="tagline" 
-              className="animate-fade-up flex items-center gap-3 mb-6"
+              className="animate-fade-up flex items-center gap-2 sm:gap-3 mb-3 sm:mb-6"
             >
-              <Crown className="w-4 h-4 text-white/70" />
-              <span className="text-xs text-white/70 tracking-[0.3em] uppercase font-medium">
+              <Crown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white/70" />
+              <span className="text-[10px] sm:text-xs text-white/70 tracking-[0.3em] uppercase font-medium">
                 World-Class Digital Collective
               </span>
             </div>
@@ -107,7 +107,7 @@ export default function App() {
             {/* Main Heading (0.2s delay) */}
             <h1 
               id="main-heading" 
-              className="animate-fade-up-delay-1 font-podium text-white uppercase leading-[0.85] tracking-tight text-[clamp(3.5rem,10vw,8.5rem)] flex flex-col"
+              className="animate-fade-up-delay-1 font-podium text-white uppercase leading-[0.85] tracking-tight text-[clamp(2.1rem,9vw,8.5rem)] flex flex-col"
             >
               <span>Design.</span>
               <span>Disrupt.</span>
@@ -117,7 +117,7 @@ export default function App() {
             {/* Subtext (0.4s delay) */}
             <p 
               id="subtext" 
-              className="animate-fade-up-delay-2 mt-10 text-white/60 text-base sm:text-lg leading-relaxed max-w-lg"
+              className="animate-fade-up-delay-2 mt-4 sm:mt-8 md:mt-10 text-white/60 text-sm sm:text-base md:text-lg leading-relaxed max-w-lg"
             >
               We build fierce brand identities that don't just <br className="hidden sm:inline" />
               turn heads — <strong className="text-white font-bold">they lead.</strong>
@@ -126,26 +126,26 @@ export default function App() {
             {/* CTA Row (0.6s delay) */}
             <div 
               id="cta-row" 
-              className="animate-fade-up-delay-3 mt-12 flex flex-wrap items-center gap-6 sm:gap-12"
+              className="animate-fade-up-delay-3 mt-6 sm:mt-10 md:mt-12 flex flex-wrap items-center gap-4 sm:gap-12"
             >
               {/* See Our Work White Button */}
               <button
                 id="see-our-work-btn"
-                className="group bg-white hover:bg-neutral-200 text-black px-8 sm:px-10 py-4 sm:py-5 text-xs font-bold tracking-[0.2em] uppercase flex items-center gap-2 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-black/40 cursor-pointer"
+                className="group bg-white hover:bg-neutral-200 text-black px-6 sm:px-10 py-3 sm:py-5 text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase flex items-center gap-2 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-black/40 cursor-pointer"
               >
                 <span>SEE OUR WORK</span>
-                <ArrowUpRight className="w-4 h-4 text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </button>
 
               {/* Award Badge */}
               <div 
                 id="award-badge" 
-                className="hidden sm:flex items-center gap-4"
+                className="flex items-center gap-3 sm:gap-4"
               >
-                <div className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center">
-                  <Award className="w-5 h-5 text-white/50" />
+                <div className="w-8 h-8 sm:w-10 sm:h-10 border border-white/20 rounded-full flex items-center justify-center">
+                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-white/50" />
                 </div>
-                <div className="text-[10px] tracking-widest text-white/50 leading-tight uppercase font-semibold">
+                <div className="text-[9px] sm:text-[10px] tracking-widest text-white/50 leading-tight uppercase font-semibold">
                   Top-Rated<br/>Brand Studio
                 </div>
               </div>
@@ -154,19 +154,19 @@ export default function App() {
             {/* Stats Row (0.8s delay) */}
             <div 
               id="stats-row" 
-              className="animate-fade-up-delay-4 mt-8 sm:mt-12 lg:mt-16 flex flex-wrap items-end justify-between gap-6 border-t border-white/10 pt-10 max-w-4xl"
+              className="animate-fade-up-delay-4 mt-6 sm:mt-12 lg:mt-16 flex flex-wrap items-end justify-between gap-4 border-t border-white/10 pt-4 sm:pt-10 max-w-4xl"
             >
-              <div className="flex flex-wrap gap-8 sm:gap-16 lg:gap-20">
+              <div className="flex flex-wrap gap-6 sm:gap-16 lg:gap-20">
                 {[
                   { value: "250+", label: "Brands Transformed" },
                   { value: "95%", label: "Client Retention" },
                   { value: "10+", label: "Years in the Game" },
                 ].map((stat, i) => (
                   <div key={i} className="flex flex-col">
-                    <span className="font-inter text-white text-3xl sm:text-5xl font-bold tracking-tighter">
+                    <span className="font-inter text-white text-xl sm:text-4xl lg:text-5xl font-bold tracking-tighter">
                       {stat.value}
                     </span>
-                    <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase mt-2 font-inter">
+                    <span className="text-white/40 text-[8px] sm:text-[10px] tracking-[0.25em] uppercase mt-1 sm:mt-2 font-inter">
                       {stat.label}
                     </span>
                   </div>
@@ -174,9 +174,9 @@ export default function App() {
               </div>
               
               {/* Availability Badge */}
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-white animate-pulse" />
-                <span className="text-[10px] tracking-widest text-white/40 uppercase font-inter">Availability: Q3 2026</span>
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white animate-pulse" />
+                <span className="text-[8px] sm:text-[10px] tracking-widest text-white/40 uppercase font-inter">Availability: Q3 2026</span>
               </div>
             </div>
 
