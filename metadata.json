@@ -1,0 +1,6 @@
+{
+  "name": "Vanguard Landing Page",
+  "description": "Fullscreen high-fidelity hero landing page for VANGUARD creative agency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
